@@ -1,202 +1,641 @@
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="id">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>CV Muhammad Fadillah Fachmi - DevOps Engineer</title>
-  <style>
-    body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial; background:#071226; color:#e6eef8; margin:24px;}
-    .card { background: linear-gradient(135deg,#071a3a,#0a2a66); padding:18px; border-radius:14px; box-shadow:0 10px 30px rgba(2,6,23,0.6); }
-    .container{ display:grid; grid-template-columns: 36% 64%; gap:22px; margin-top:18px; }
-    h1{ margin:0 0 6px 0; font-size:24px;}
-    h3{ margin:0 0 8px 0; font-weight:500; color:#bde0ff;}
-    .muted{ color:#9fb7d9; font-size:14px; }
-    .section-title{ font-size:18px; font-weight:700; margin-top:16px; padding-bottom:8px; border-bottom:3px solid rgba(0,170,255,0.12); color:#cfeefd}
-    .skill-bar{ width:100%; background:#11314f; border-radius:10px; overflow:hidden; height:12px; margin:8px 0 14px;}
-    .skill-fill{ height:12px; border-radius:10px; background:linear-gradient(90deg,#00c6ff,#0072ff);}
-    .logo-row img{ height:36px; margin-right:8px; filter: drop-shadow(0 2px 6px rgba(0,0,0,0.6)); vertical-align:middle;}
-    .left-col{ padding-right:8px; }
-    .right-col{ padding-left:8px; }
-    .list{ margin:8px 0 0 0; padding-left:16px; color:#d9eefc; }
-    .project{ background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); padding:12px; border-radius:10px; margin-bottom:10px; border-left:4px solid #0072ff;}
-    .qr img{ height:170px; width:170px; border-radius:8px; background:white; padding:6px; }
-    .header-flex{ display:flex; align-items:center; justify-content:space-between; gap:12px; }
-    .header-left{ max-width:60%; }
-    .contact{ margin-top:8px; color:#b9d9f7; }
-    .soft-list{ padding-left:16px; color:#d9eefc; }
-    .photo-placeholder{ width:120px; height:120px; border-radius:12px; background:linear-gradient(135deg,#02263d,#044a84); display:flex; align-items:center; justify-content:center; color:#8fbfe9; font-weight:700; }
-    footer{ margin-top:20px; color:#8aaed6; font-size:13px; text-align:center;}
-    @media (max-width:900px){ .container{ grid-template-columns: 1fr; } .qr img{ height:120px; width:120px; } .header-left{ max-width:100%; } }
-  </style>
-</head>
-<body>
-  <div class="card header-flex">
-    <div class="header-left">
-      <h1>👨‍💻 Muhammad Fadillah Fachmi</h1>
-      <h3>Quality Assurance | DevOps Engineer | Cloud & CI/CD Specialist</h3>
-      <div class="contact muted">
-        📍 Bogor, Indonesia &nbsp; • &nbsp; 📧 email@example.com &nbsp; • &nbsp; 📞 08xxxxxx
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>CV Muhammad Fadillah Fachmi - DevOps Engineer</title>
+
+    <link rel="manifest" href="manifest.json" />
+    <meta name="theme-color" content="#071226" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="apple-touch-icon" href="icons/icon-192.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* CSS Clean-up & Optimasi */
+      body {
+        font-family: "Inter", ui-sans-serif, system-ui, -apple-system,
+          "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        background: #071226;
+        color: #e6eef8;
+        margin: 24px;
+        line-height: 1.6;
+      }
+      .card {
+        background: linear-gradient(135deg, #071a3a, #0a2a66);
+        padding: 18px;
+        border-radius: 14px;
+        box-shadow: 0 10px 30px rgba(2, 6, 23, 0.6);
+      }
+      .container {
+        display: grid;
+        grid-template-columns: 36% 64%;
+        gap: 22px;
+        margin-top: 18px;
+      }
+      h1 {
+        margin: 0 0 6px 0;
+        font-size: 24px;
+      }
+      h2 {
+        margin: 0 0 8px 0;
+        font-weight: 500;
+        color: #bde0ff;
+      }
+      h3 {
+        font-size: 16px;
+        font-weight: 700;
+        color: #dff6ff;
+        margin: 10px 0 5px 0;
+      }
+      .muted {
+        color: #9fb7d9;
+        font-size: 14px;
+      }
+      .section-title {
+        font-size: 18px;
+        font-weight: 700;
+        margin-top: 20px;
+        padding-bottom: 8px;
+        border-bottom: 3px solid rgba(0, 170, 255, 0.12);
+        color: #cfeefd;
+      }
+      .logo-row img {
+        height: 36px;
+        margin-right: 8px;
+        filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.6));
+        vertical-align: middle;
+      }
+      .list,
+      .soft-list {
+        margin: 8px 0 0 0;
+        padding-left: 16px;
+        color: #d9eefc;
+      }
+      .project {
+        background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0.02),
+          rgba(255, 255, 255, 0.01)
+        );
+        padding: 12px;
+        border-radius: 10px;
+        margin-bottom: 15px;
+        border-left: 4px solid #0072ff;
+      }
+      .qr img {
+        height: 170px;
+        width: 170px;
+        border-radius: 8px;
+        background: white;
+        padding: 6px;
+        object-fit: contain;
+      }
+      .header-flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+      }
+      .header-left {
+        max-width: 60%;
+      }
+      .contact {
+        margin-top: 8px;
+        color: #b9d9f7;
+      }
+      footer {
+        margin-top: 30px;
+        color: #8aaed6;
+        font-size: 13px;
+        text-align: center;
+      }
+
+      /* Gaya untuk Tombol Download PDF */
+      .download-btn {
+        background: #0072ff;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 700;
+        margin-top: 15px;
+        margin-bottom: 5px;
+        display: inline-block;
+        transition: background 0.3s;
+        box-shadow: 0 4px 15px rgba(0, 114, 255, 0.4);
+      }
+      .download-btn:hover {
+        background: #005bb5;
+        box-shadow: 0 6px 20px rgba(0, 114, 255, 0.6);
+      }
+
+      @media (max-width: 900px) {
+        .container {
+          grid-template-columns: 1fr;
+        }
+        .qr img {
+          height: 100px;
+          width: 100px;
+        }
+        .header-left {
+          max-width: 100%;
+        }
+        .header-flex {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        .contact {
+          margin-bottom: 12px;
+        }
+        .section-title {
+          margin-top: 15px;
+        }
+      }
+
+      /* ==================================== */
+      /* PERBAIKAN KHUSUS UNTUK CETAK (PDF) */
+      /* ==================================== */
+      @media print {
+        /* Hapus semua margin/padding dari body untuk memaksimalkan area cetak */
+        body {
+          background: white !important;
+          color: black !important;
+          margin: 0 !important;
+          padding: 0 !important;
+          font-size: 10pt; /* Ukuran font lebih kecil agar muat */
+        }
+
+        /* Tombol Download wajib disembunyikan */
+        .download-btn,
+        footer {
+          display: none !important;
+        }
+
+        /* Atur Ulang Tata Letak Container ke Blok Standar */
+        .container {
+          display: block !important;
+          width: 100% !important;
+          margin: 0 !important;
+          padding: 10px;
+        }
+        .left-col,
+        .right-col {
+          width: 100% !important;
+          padding: 0 !important;
+          margin: 0 !important;
+        }
+
+        /* Sederhanakan Tampilan Card/Header */
+        .card,
+        .project {
+          background: none !important;
+          box-shadow: none !important;
+          border: none !important;
+          padding: 0 !important;
+        }
+
+        /* Sembunyikan QR Code */
+        .qr {
+          display: none !important;
+        }
+
+        /* Gaya Teks Cetak */
+        h1,
+        h2,
+        h3,
+        .section-title {
+          color: black !important;
+          margin-top: 10px;
+          padding-bottom: 4px;
+        }
+        .muted,
+        .contact {
+          color: #555 !important;
+        }
+
+        /* Pastikan elemen List tidak merusak layout */
+        .list {
+          padding-left: 5px !important;
+        }
+        .list li {
+          margin-bottom: 2px;
+        }
+      }
+      .profile-photo {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+
+        /* Elegant effect */
+        filter: grayscale(100%);
+        transition: all 0.35s ease;
+
+        /* Double ring */
+        border: 3px solid #1e90ff;
+        outline: 4px solid rgba(30, 144, 255, 0.25);
+
+        /* Soft shadow */
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45),
+          inset 0 0 0 1px rgba(255, 255, 255, 0.15);
+      }
+
+      /* Hover effect */
+      .profile-photo:hover {
+        filter: grayscale(0%);
+        transform: scale(1.04);
+      }
+      .profile-header {
+        position: relative;
+      }
+
+      .profile-photo::after {
+        content: "";
+        position: absolute;
+        inset: -6px;
+        border-radius: 50%;
+      }
+
+      @media (max-width: 600px) {
+        .profile-photo {
+          width: 84px;
+          height: 84px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card header-flex">
+      <div class="header-left">
+        <div class="profile-header">
+          <img
+            src="assets/profile.png"
+            alt="Foto Muhammad Fadillah Fachmi"
+            class="profile-photo"
+          />
+
+          <div>
+            <h1>👨‍💻 Muhammad Fadillah Fachmi</h1>
+            <h3>
+              Quality Assurance | DevOps Engineer | Cloud & CI/CD Specialist
+            </h3>
+          </div>
+        </div>
+        <h2>Quality Assurance | DevOps Engineer | Cloud & CI/CD Specialist</h2>
+        <div class="contact muted">
+          📍 Pamulang Tangerang Selatan, Indonesia &nbsp; • &nbsp; 📧
+          fachmy.analisprogram@gmail.com &nbsp; • &nbsp; 📞 085714134580
+        </div>
+        <div style="margin-top: 12px" class="logo-row">
+          <img
+            alt="k8s"
+            src="https://www.vectorlogo.zone/logos/kubernetes/kubernetes-icon.svg"
+            loading="lazy"
+          />
+          <img
+            alt="docker"
+            src="https://www.vectorlogo.zone/logos/docker/docker-icon.svg"
+            loading="lazy"
+          />
+          <img
+            alt="gitlab"
+            src="https://www.vectorlogo.zone/logos/gitlab/gitlab-icon.svg"
+            loading="lazy"
+          />
+          <img
+            alt="openshift"
+            src="https://www.vectorlogo.zone/logos/openshift/openshift-icon.svg"
+            loading="lazy"
+          />
+          <img
+            alt="linux"
+            src="https://www.vectorlogo.zone/logos/linux/linux-icon.svg"
+            loading="lazy"
+          />
+        </div>
       </div>
-      <div style="margin-top:12px;" class="logo-row">
-        <img alt="k8s" src="https://www.vectorlogo.zone/logos/kubernetes/kubernetes-icon.svg">
-        <img alt="docker" src="https://www.vectorlogo.zone/logos/docker/docker-icon.svg">
-        <img alt="gitlab" src="https://www.vectorlogo.zone/logos/gitlab/gitlab-icon.svg">
-        <img alt="openshift" src="https://www.vectorlogo.zone/logos/openshift/openshift-icon.svg">
-        <img alt="linux" src="https://www.vectorlogo.zone/logos/linux/linux-icon.svg">
+
+      <div style="text-align: right">
+        <div
+          style="
+            display: flex;
+            gap: 10px;
+            justify-content: flex-end;
+            align-items: center;
+          "
+        >
+          <div style="text-align: center">
+            <div style="font-weight: 700; color: #dff6ff; margin-bottom: 6px">
+              GitHub
+            </div>
+            <div class="qr">
+              <img
+                src="https://api.qrserver.com/v1/create-qr-code/?size=170x170&data=https://github.com/fachmi1407"
+                alt="QR GitHub"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div style="text-align: center">
+            <div style="font-weight: 700; color: #dff6ff; margin-bottom: 6px">
+              Website
+            </div>
+            <div class="qr">
+              <img
+                src="https://api.qrserver.com/v1/create-qr-code/?size=170x170&data=https://fachmi1407.github.io/cv-fachmi/"
+                alt="QR Website"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div style="text-align: center">
+            <div style="font-weight: 700; color: #dff6ff; margin-bottom: 6px">
+              LinkedIn
+            </div>
+            <div class="qr">
+              <img
+                src="https://api.qrserver.com/v1/create-qr-code/?size=170x170&data=https://www.linkedin.com/in/fachmy-fadillah-562965240/"
+                alt="QR LinkedIn"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+    <button class="download-btn" onclick="window.print()">
+      ⬇️ Download CV (PDF)
+    </button>
+    <div class="container">
+      <div class="left-col">
+        <div class="section-title">🌟 Profil Singkat</div>
+        <p class="list">
+          Profesional DevOps & QA dengan pengalaman lebih dari
+          <strong>5 tahun</strong> dalam pengembangan, testing, integrasi, dan
+          deployment aplikasi skala enterprise. Terlibat aktif pada proyek
+          <strong>BTN – Cash Center Management System (CCMS)</strong> dan
+          <strong>PWA Replenishment PJPUR</strong>, termasuk implementasi
+          pipeline <strong>CI/CD</strong>, <strong>containerization</strong>,
+          <strong>Kubernetes</strong>, serta automation di lingkungan
+          development & production.
+        </p>
+        <p class="list">
+          Memiliki pendekatan kerja yang analitis, fokus pada
+          <strong>reliability</strong>, <strong>automation</strong>, dan
+          <strong>stable delivery</strong>. Siap berkontribusi pada tim modern
+          yang menerapkan DevOps culture.
+        </p>
 
-    <div style="text-align:right;">
-      <div style="display:flex; gap:10px; justify-content:flex-end; align-items:center;">
-        <div style="text-align:center;">
-          <div style="font-weight:700; color:#dff6ff; margin-bottom:6px;">GitHub</div>
-          <div class="qr"><img src="https://api.qrserver.com/v1/create-qr-code/?size=170x170&data=https://github.com/fachmi1407" alt="QR GitHub"></div>
-        </div>
-        <div style="text-align:center;">
-          <div style="font-weight:700; color:#dff6ff; margin-bottom:6px;">GitLab</div>
-          <div class="qr"><img src="https://api.qrserver.com/v1/create-qr-code/?size=170x170&data=http://gitlab.local/btn/ccms-fase-3" alt="QR GitLab"></div>
-        </div>
-        <div style="text-align:center;">
-          <div style="font-weight:700; color:#dff6ff; margin-bottom:6px;">LinkedIn</div>
-          <div class="qr"><img src="https://api.qrserver.com/v1/create-qr-code/?size=170x170&data=https://www.linkedin.com/in/fachmy-fadillah-562965240/" alt="QR LinkedIn"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="container">
-    <div class="left-col">
-      <div class="section-title">🌟 Profil Singkat</div>
-      <p class="list">Profesional DevOps & QA dengan pengalaman lebih dari <strong>5 tahun</strong> dalam pengembangan, testing, integrasi, dan deployment aplikasi skala enterprise. Terlibat aktif pada proyek <strong>BTN – Cash Center Management System (CCMS)</strong> dan <strong>PWA Replenishment PJPUR</strong>, termasuk implementasi pipeline <strong>CI/CD</strong>, <strong>containerization</strong>, <strong>Kubernetes</strong>, serta automation di lingkungan development & production.</p>
-      <p class="list">Memiliki pendekatan kerja yang analitis, fokus pada <strong>reliability</strong>, <strong>automation</strong>, dan <strong>stable delivery</strong>. Siap berkontribusi pada tim modern yang menerapkan DevOps culture.</p>
-
-      <div class="section-title">🛠️ Keahlian Inti (Tech Stack)</div>
-      <ul class="list">
-        <li><strong>DevOps & Cloud:</strong> Docker, Kubernetes, Openshift, GitLab CI/CD, Helm, ArgoCD (basic), Linux Server (RHEL, Ubuntu), Proxmox, Monitoring & Production Maintenance</li>
-        <li><strong>Quality Assurance:</strong> Unit Testing, SIT, UAT, Regression, Test Documentation & Reporting, API Troubleshooting</li>
-        <li><strong>Programming & Tools:</strong> Kotlin (Basic), Bash Scripting, LAMP, XAMPP, CentOS, Git/GitLab, REST API</li>
-      </ul>
-
-      <div class="section-title">💡 Soft Skills</div>
-      <ul class="soft-list">
-        <li>Komunikasi efektif</li>
-        <li>Problem solving analitis</li>
-        <li>Teamwork & kolaborasi DevOps</li>
-        <li>Time management</li>
-        <li>Adaptasi cepat pada teknologi baru</li>
-        <li>Dokumentasi teknis yang rapi</li>
-      </ul>
-
-      <div class="section-title">🔍 Tech Summary</div>
-      <ul class="list">
-        <li>Berpengalaman dalam CI/CD pipeline GitLab</li>
-        <li>Automation deployment environment Dev → Prod</li>
-        <li>Container orchestration dengan Kubernetes & Openshift</li>
-        <li>Maintenance aplikasi banking enterprise (BTN CCMS)</li>
-        <li>Troubleshooting API & server Linux</li>
-        <li>Monitoring stability & reliability aplikasi</li>
-      </ul>
-
-      <div class="section-title">📜 Sertifikasi</div>
-      <ul class="list">
-        <li>CKA — Kubernetes Administrator (KodeKloud, 2023)</li>
-        <li>Kubernetes Admin — Udemy (2023)</li>
-        <li>RHCSA — EX200 (2023)</li>
-        <li>Docker — Udemy (2021)</li>
-        <li>MongoDB Basic — MongoDB University (2020)</li>
-        <li>Android Kominfo (2020)</li>
-        <li>ECESET N2KC — Prosperita (2025)</li>
-      </ul>
-
-      <div class="section-title">📦 Tech Logos</div>
-      <div class="logo-row">
-        <img alt="k8s" src="https://www.vectorlogo.zone/logos/kubernetes/kubernetes-icon.svg">
-        <img alt="docker" src="https://www.vectorlogo.zone/logos/docker/docker-icon.svg">
-        <img alt="gitlab" src="https://www.vectorlogo.zone/logos/gitlab/gitlab-icon.svg">
-        <img alt="openshift" src="https://www.vectorlogo.zone/logos/openshift/openshift-icon.svg">
-        <img alt="linux" src="https://www.vectorlogo.zone/logos/linux/linux-icon.svg">
-      </div>
-
-    </div>
-
-    <div class="right-col">
-      <div class="section-title">🧩 Pengalaman Kerja & Proyek Utama</div>
-
-      <div class="project">
-        <div style="font-weight:700; color:#dff6ff;">🔥 2024–2025 – DevOps & QA | PWA Replenishment PJPUR – Fase 1</div>
-        <div class="muted">PT Mitra Infosarana – BTN</div>
+        <div class="section-title">🛠️ Keahlian Inti (Tech Stack)</div>
         <ul class="list">
-          <li>Melakukan Unit Test, SIT, UAT untuk modul PWA</li>
-          <li>Implementasi CI/CD GitLab untuk backend & frontend</li>
-          <li>Deployment ke server development dan production</li>
-          <li>Dokumentasi pipeline & source code</li>
+          <li>
+            <strong>DevOps & Cloud:</strong> Docker, Kubernetes, Openshift,
+            GitLab CI/CD, Helm, ArgoCD (basic), Linux Server (RHEL, Ubuntu),
+            Proxmox, Monitoring & Production Maintenance
+          </li>
+          <li>
+            <strong>Quality Assurance:</strong> Unit Testing, SIT, UAT,
+            Regression, Test Documentation & Reporting, API Troubleshooting
+          </li>
+          <li>
+            <strong>Programming & Tools:</strong> Kotlin (Basic), Bash
+            Scripting, LAMP, XAMPP, CentOS, Git/GitLab, REST API
+          </li>
+        </ul>
+
+        <div class="section-title">💡 Soft Skills</div>
+        <ul class="list">
+          <li>Komunikasi efektif</li>
+          <li>Problem solving analitis</li>
+          <li>Teamwork & kolaborasi DevOps</li>
+          <li>Time management</li>
+          <li>Adaptasi cepat pada teknologi baru</li>
+          <li>Dokumentasi teknis yang rapi</li>
+        </ul>
+
+        <div class="section-title">🔍 Tech Summary</div>
+        <ul class="list">
+          <li>Berpengalaman dalam CI/CD pipeline GitLab</li>
+          <li>Automation deployment environment Dev → Prod</li>
+          <li>Container orchestration dengan Kubernetes & Openshift</li>
+          <li>Maintenance aplikasi banking enterprise (BTN CCMS)</li>
+          <li>Troubleshooting API & server Linux</li>
+          <li>Monitoring stability & reliability aplikasi</li>
+        </ul>
+
+        <div class="section-title">📜 Sertifikasi</div>
+        <ul class="list">
+          <li>CKA — Kubernetes Administrator (KodeKloud, 2023)</li>
+          <li>Kubernetes Admin — Udemy (2023)</li>
+          <li>RHCSA — EX200 (2023)</li>
+          <li>Docker — Udemy (2021)</li>
+          <li>MongoDB Basic — MongoDB University (2020)</li>
+          <li>Android Kominfo (2020)</li>
+          <li>ECESET N2KC — Prosperita (2025)</li>
+          <li>Red Hat Ansible Automation Platform: Seller (2025)</li>
+          <li>Red Hat Portfolio: Foundational (2025)</li>
+          <li>Red Hat OpenShift: Seller (2025)</li>
+        </ul>
+
+        <div class="section-title">📦 Tech Logos</div>
+        <div class="logo-row">
+          <img
+            alt="k8s"
+            src="https://www.vectorlogo.zone/logos/kubernetes/kubernetes-icon.svg"
+            loading="lazy"
+          />
+          <img
+            alt="docker"
+            src="https://www.vectorlogo.zone/logos/docker/docker-icon.svg"
+            loading="lazy"
+          />
+          <img
+            alt="gitlab"
+            src="https://www.vectorlogo.zone/logos/gitlab/gitlab-icon.svg"
+            loading="lazy"
+          />
+          <img
+            alt="openshift"
+            src="https://www.vectorlogo.zone/logos/openshift/openshift-icon.svg"
+            loading="lazy"
+          />
+          <img
+            alt="linux"
+            src="https://www.vectorlogo.zone/logos/linux/linux-icon.svg"
+            loading="lazy"
+          />
+          <img
+            src="https://www.vectorlogo.zone/logos/jenkins/jenkins-icon.svg"
+            alt="Jenkins Logo"
+            width="36px"
+          />
+          <img
+            src="https://www.vectorlogo.zone/logos/ansible/ansible-icon.svg"
+            alt="Ansible Logo"
+            width="36px"
+          />
+          <img
+            src="https://www.vectorlogo.zone/logos/redhat/redhat-icon.svg"
+            alt="Red Hat Logo"
+            width="36px"
+          />
+        </div>
+      </div>
+      <div class="right-col">
+        <div class="section-title">🧩 Pengalaman Kerja & Proyek Utama</div>
+        <div class="project">
+          <h3>
+            🔥 2025 – Deployment & Management of OKD (OpenShift Community
+            Platform)
+          </h3>
+          <div class="muted">PT Mitra Infosarana – PT Quadrant Solutions</div>
+          <ul class="list">
+            <li>Setup & Instalasi OKD (OpenShift Community Platform).</li>
+            <li>Deployment Aplikasi & Operational Workloads.</li>
+            <li>
+              Mengimplementasikan CI/CD pipeline menggunakan Jenkins integrated
+              OpenShift.
+            </li>
+            <li>
+              Menganalisa root cause dari aplikasi yang gagal (failed
+              scheduling, memory limit).
+            </li>
+          </ul>
+        </div>
+        <div class="project">
+          <h3>
+            🔥 2025 – Implementasi Private Cloud Storage berbasis Nextcloud
+            (EFSS - Enterprise File Sync and Share)
+          </h3>
+          <div class="muted">PT Mitra Infosarana – Klinik Suhada</div>
+          <ul class="list">
+            <li>
+              Menyiapkan Ubuntu Server (20.04/22.04) meliputi update, firewall,
+              dan tuning kernel.
+            </li>
+            <li>
+              Instalasi Docker Engine & Docker Compose sebagai environment
+              utama.
+            </li>
+            <li>
+              Membuat struktur folder persistent storage untuk container
+              Nextcloud.
+            </li>
+            <li>
+              Install Nextcloud Talk (Nextalk) = fitur chat, voice call, dan
+              video meeting.
+            </li>
+          </ul>
+        </div>
+        <div class="project">
+          <h3>🔥 2024–2025 – DevOps & QA | PWA Replenishment PJPUR – Fase 1</h3>
+          <div class="muted">PT Mitra Infosarana – BTN</div>
+          <ul class="list">
+            <li>Melakukan Unit Test, SIT, UAT untuk modul PWA</li>
+            <li>Implementasi CI/CD GitLab untuk backend & frontend</li>
+            <li>Deployment ke server development dan production</li>
+            <li>Dokumentasi pipeline & source code</li>
+          </ul>
+        </div>
+
+        <div class="project">
+          <h3>🔥 2024 – DevOps & QA | CCMS – Fase 3</h3>
+          <div class="muted">PT Mitra Infosarana – BTN</div>
+          <ul class="list">
+            <li>QA Testing (Unit Test, SIT, UAT)</li>
+            <li>Preventive & Corrective aplikasi CCMS</li>
+            <li>Bug Fixing & Production Support</li>
+            <li>Deployment CI/CD ke production</li>
+          </ul>
+        </div>
+
+        <div class="project">
+          <h3>🔍 Proyek Lainnya</h3>
+          <div class="muted">
+            PT Mitra Infosarana – BTN (2021-2023) & PT Quadrant Solutions
+            (2019-2021)
+          </div>
+          <ul class="list">
+            <li>
+              2023 – QA & Programmer | CCMS – Fase 2: Testing & bug fixing,
+              deployment improvement release
+            </li>
+            <li>
+              2022 – Programmer | CCMS – Fase 1: Preventive & corrective issue,
+              bug fixing dev environment
+            </li>
+            <li>2021 – QA | CCMS – Fase 1: Unit Test, SIT, UAT</li>
+            <li>
+              2021 – Programmer | CEWS BMKG: Preventive & Corrective CEWS Portal
+              & Map
+            </li>
+            <li>
+              2020 – Engineer | Migrasi Server Universitas Pertahanan: Instalasi
+              Proxmox IaaS, Migrasi database & web perpustakaan, Maintenance
+              server
+            </li>
+            <li>
+              2020 – Programmer | CEWS BMKG: Monitoring & maintenance aplikasi
+              CEWS
+            </li>
+            <li>
+              2019 – Junior Engineer | Perawatan Server Klimate BMKG: Perawatan
+              Rocks Cluster Server
+            </li>
+          </ul>
+        </div>
+
+        <div class="section-title">📌 Contact & Links</div>
+        <ul class="list">
+          <li>
+            GitHub:
+            <a
+              style="color: #bfeaff"
+              href="https://github.com/fachmi1407"
+              target="_blank"
+              >github.com/fachmi1407</a
+            >
+          </li>
+          <li>
+            LinkedIn:
+            <a
+              style="color: #bfeaff"
+              href="https://www.linkedin.com/in/fachmy-fadillah-562965240/"
+              target="_blank"
+              >linkedin.com/in/fachmy-fadillah-562965240</a
+            >
+          </li>
+          <li>
+            Website:
+            <a
+              style="color: #bfeaff"
+              href="https://fachmi1407.github.io/cv-fachmi/"
+              target="_blank"
+              >fachmi1407.github.io/cv-fachmi</a
+            >
+          </li>
         </ul>
       </div>
-
-      <div class="project">
-        <div style="font-weight:700; color:#dff6ff;">🔥 2024 – DevOps & QA | CCMS – Fase 3</div>
-        <div class="muted">PT Mitra Infosarana – BTN</div>
-        <ul class="list">
-          <li>QA Testing (Unit Test, SIT, UAT)</li>
-          <li>Preventive & Corrective aplikasi CCMS</li>
-          <li>Bug Fixing & Production Support</li>
-          <li>Deployment CI/CD ke production</li>
-        </ul>
-      </div>
-
-      <div class="project">
-        <div style="font-weight:700; color:#dff6ff;">🔥 2023 – QA & Programmer | CCMS – Fase 2</div>
-        <div class="muted">PT Mitra Infosarana – BTN</div>
-        <ul class="list"><li>Testing & bug fixing</li><li>Deployment improvement release</li></ul>
-      </div>
-
-      <div class="project">
-        <div style="font-weight:700; color:#dff6ff;">⚡ 2022 – Programmer | CCMS – Fase 1</div>
-        <div class="muted">PT Mitra Infosarana – BTN</div>
-        <ul class="list"><li>Preventive & corrective issue</li><li>Bug fixing dev environment</li></ul>
-      </div>
-
-      <div class="project">
-        <div style="font-weight:700; color:#dff6ff;">🔧 2021 – QA | CCMS – Fase 1</div>
-        <div class="muted">PT Mitra Infosarana – BTN</div>
-        <ul class="list"><li>Unit Test, SIT, UAT</li></ul>
-      </div>
-
-      <div class="project">
-        <div style="font-weight:700; color:#dff6ff;">🌐 2021 – Programmer | CEWS BMKG</div>
-        <div class="muted">PT Quadrant Solutions</div>
-        <ul class="list"><li>Preventive & Corrective CEWS Portal & Map</li></ul>
-      </div>
-
-      <div class="project">
-        <div style="font-weight:700; color:#dff6ff;">🏫 2020 – Engineer | Migrasi Server Universitas Pertahanan</div>
-        <div class="muted">PT Quadrant Solutions</div>
-        <ul class="list"><li>Instalasi Proxmox IaaS</li><li>Migrasi database & web perpustakaan</li><li>Maintenance server & perangkat terkait</li></ul>
-      </div>
-
-      <div class="project">
-        <div style="font-weight:700; color:#dff6ff;">🌐 2020 – Programmer | CEWS BMKG</div>
-        <div class="muted">PT Quadrant Solutions</div>
-        <ul class="list"><li>Monitoring & maintenance aplikasi CEWS</li></ul>
-      </div>
-
-      <div class="project">
-        <div style="font-weight:700; color:#dff6ff;">🛰️ 2019 – Junior Engineer | Perawatan Server Klimate BMKG</div>
-        <div class="muted">PT Quadrant Solutions</div>
-        <ul class="list"><li>Perawatan Rocks Cluster Server</li></ul>
-      </div>
-
-      <div class="section-title">📌 Contact & Links</div>
-      <ul class="list">
-        <li>GitHub: <a style="color:#bfeaff" href="https://github.com/fachmi1407" target="_blank">github.com/fachmi1407</a></li>
-        <li>LinkedIn: <a style="color:#bfeaff" href="https://www.linkedin.com/in/fachmy-fadillah-562965240/" target="_blank">linkedin.com/in/fachmy-fadillah-562965240</a></li>
-        <li>GitLab (internal): <span style="color:#bfeaff">http://gitlab.local/btn/ccms-fase-3</span></li>
-      </ul>
-
     </div>
-  </div>
 
-  <footer>Generated by CV Builder • Cyber Blue Tech Edition</footer>
-</body>
+    <footer>Generated by Fachmi • M. Fadillah Fachmi Tech Edition</footer>
+
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("service-worker.js");
+        });
+      }
+    </script>
+  </body>
 </html>
