@@ -1,6 +1,3 @@
-<!doctype html>
-<html lang="id">
-  <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>CV Muhammad Fadillah Fachmi</title>
@@ -328,6 +325,39 @@
         }
         .list li {
           margin-bottom: 2px;
+        }
+
+        /* Expand semua dropdown saat print */
+        .dropdown-content {
+          max-height: none !important;
+          display: block !important;
+        }
+        .dropdown-icon {
+          display: none !important;
+        }
+        .dropdown-header {
+          background: none !important;
+          border: none !important;
+          padding: 5px 0 !important;
+        }
+        .dropdown-header strong {
+          color: black !important;
+        }
+
+        /* Tampilkan chart dengan ukuran yang sesuai */
+        canvas {
+          max-height: 250px !important;
+          max-width: 100% !important;
+        }
+
+        /* Perbaiki layout untuk print */
+        .profile-photo {
+          width: 80px !important;
+          height: 80px !important;
+        }
+        .logo-row img {
+          height: 24px !important;
+          width: auto !important;
         }
       }
       .profile-photo {
@@ -678,32 +708,29 @@
     </div>
     <button class="download-btn" onclick="window.print()">⬇️ Download CV (PDF)</button>
     <button class="download-btn" onclick="downloadWordDoc()">⬇️ Download CV (Word)</button>
+    
+    <div class="card" style="margin-bottom: 22px;">
+      <div class="section-title">🌟 Profil Singkat</div>
+      <p class="list">
+        Profesional IT Infrastructure, DevOps, QA, dan Technical Engineer dengan pengalaman lebih dari 5 tahun dalam pengelolaan infrastruktur enterprise, monitoring sistem, troubleshooting, deployment aplikasi, serta maintenance server dan production environment. Berpengalaman dalam instalasi dan konfigurasi server Linux & Windows, setup RAID, integrasi storage, automation deployment, containerization (Docker & Kubernetes), serta maintenance aplikasi enterprise di lingkungan development dan production. Memiliki pemahaman cloud computing sebagai AWS Cloud Practitioner dan sedang memperdalam bidang Security Penetration Testing dan Cyber Security, termasuk monitoring security event, log analysis, dan incident handling.
+      </p>
+    </div>
+    
     <div class="container">
       <div class="left-col">
-        <div class="section-title">🌟 Profil Singkat</div>
-        <p class="list">
-          Profesional IT Infrastructure, DevOps, QA, dan Technical Engineer dengan pengalaman lebih
-          dari 5 tahun dalam pengelolaan infrastruktur enterprise, monitoring sistem, troubleshooting,
-          deployment aplikasi, serta maintenance server dan production environment.
-        </p>
-        <p class="list">
-          Berpengalaman dalam instalasi dan konfigurasi server Linux &amp; Windows, setup RAID,
-          integrasi storage, automation deployment, containerization (Docker & Kubernetes), serta
-          maintenance aplikasi enterprise di lingkungan development dan production.
-        </p>
-        <p class="list">
-          Memiliki pemahaman cloud computing sebagai AWS Cloud Practitioner dan sedang memperdalam
-          bidang Security Penetration Testing dan Cyber Security, termasuk monitoring security event,
-          log analysis, dan incident handling.
-        </p>
-
-        <div class="section-title">🛠️ Keahlian Inti (Tech Stack)</div>
-
+               
+        <div class="section-title">📊 Distribusi Keahlian</div>
+        <div style="background: rgba(255, 255, 255, 0.02); padding: 16px; border-radius: 10px; margin-bottom: 15px;">
+          <canvas id="skillChart" style="max-height: 300px;"></canvas>
+        </div>
+<div class="section-title">🛠️ Keahlian Inti (Tech Stack)</div>
+<div style="background: rgba(255, 255, 255, 0.02); padding: 16px; border-radius: 10px; margin-bottom: 15px;">
         <div class="dropdown">
           <div class="dropdown-header" onclick="toggleDropdown(this)">
             <strong>🔧 DevOps & Infrastructure</strong>
             <span class="dropdown-icon">▼</span>
           </div>
+          
           <div class="dropdown-content">
             <ul class="list">
               <li>Docker</li>
@@ -783,11 +810,8 @@
             </ul>
           </div>
         </div>
-
-        <div class="section-title">� Distribusi Keahlian</div>
-        <div style="background: rgba(255, 255, 255, 0.02); padding: 16px; border-radius: 10px; margin-bottom: 15px;">
-          <canvas id="skillChart" style="max-height: 300px;"></canvas>
         </div>
+
 
         <div class="section-title">� Soft Skills</div>
         <table class="tech-table">
@@ -930,7 +954,7 @@
       <div class="right-col">
         <div class="section-title">🧩 Pengalaman Kerja & Proyek Utama</div>
         <div style="background: rgba(255, 255, 255, 0.02); padding: 16px; border-radius: 10px; margin-bottom: 15px;">
-          <canvas id="experienceChart" style="max-height: 250px;"></canvas>
+          <canvas id="experienceChart" style="max-height: 300px;"></canvas>
         </div>
         <div class="project">
           <h3>🔥 2026 – Sekarang | Maintenance Aplikasi Production CCMS Versi 3</h3>
@@ -1268,6 +1292,7 @@
           .card, .project { background: none !important; box-shadow: none !important; border: none !important; }
           .download-btn, .qr { display: none !important; }
           .logo-row img, .profile-photo { max-width: 100% !important; height: auto !important; }
+          .dropdown-header strong { color: #000 !important; }
         </style>`;
 
         const html = `<!DOCTYPE html><html><head><meta charset="utf-8"><title>${document.title}</title>${styleTags}${wordStyle}</head><body>${clone.innerHTML}</body></html>`;
